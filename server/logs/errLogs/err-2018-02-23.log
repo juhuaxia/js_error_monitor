@@ -1,0 +1,64 @@
+[2018-02-23T14:28:59.748] [ERROR] err - mongoose connect error { MongoNetworkError: failed to connect to server [127.0.0.1:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]
+    at Pool.<anonymous> (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/topologies/server.js:503:11)
+    at Pool.emit (events.js:160:13)
+    at Connection.<anonymous> (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:326:12)
+    at Object.onceWrapper (events.js:255:19)
+    at Connection.emit (events.js:160:13)
+    at Socket.<anonymous> (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:245:50)
+    at Object.onceWrapper (events.js:255:19)
+    at Socket.emit (events.js:160:13)
+    at emitErrorNT (internal/streams/destroy.js:64:8)
+    at process._tickCallback (internal/process/next_tick.js:152:19)
+  name: 'MongoNetworkError',
+  message: 'failed to connect to server [127.0.0.1:27017] on first connect [MongoNetworkError: connect ECONNREFUSED 127.0.0.1:27017]' }
+[2018-02-23T16:55:17.188] [ERROR] err - mongoose connect error { MongoError: Authentication failed.
+    at /Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at Socket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:599:20)
+  name: 'MongoError',
+  message: 'Authentication failed.',
+  ok: 0,
+  errmsg: 'Authentication failed.',
+  code: 18,
+  codeName: 'AuthenticationFailed' }
+[2018-02-23T16:56:26.147] [ERROR] err - mongoose connect error { MongoError: Authentication failed.
+    at /Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at Socket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:599:20)
+  name: 'MongoError',
+  message: 'Authentication failed.',
+  ok: 0,
+  errmsg: 'Authentication failed.',
+  code: 18,
+  codeName: 'AuthenticationFailed' }
+[2018-02-23T17:03:53.612] [ERROR] err - mongoose connect error { MongoError: Authentication failed.
+    at /Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:595:61
+    at authenticateStragglers (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:513:16)
+    at Connection.messageHandler (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/pool.js:549:5)
+    at emitMessageHandler (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:309:10)
+    at Socket.<anonymous> (/Users/admin/Documents/Microsoft 用户数据/fan/myworks/JS_Error_OB/server/node_modules/mongodb-core/lib/connection/connection.js:452:17)
+    at Socket.emit (events.js:160:13)
+    at addChunk (_stream_readable.js:269:12)
+    at readableAddChunk (_stream_readable.js:256:11)
+    at Socket.Readable.push (_stream_readable.js:213:10)
+    at TCP.onread (net.js:599:20)
+  name: 'MongoError',
+  message: 'Authentication failed.',
+  ok: 0,
+  errmsg: 'Authentication failed.',
+  code: 18,
+  codeName: 'AuthenticationFailed' }

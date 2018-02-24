@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <link href="vendor/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="vendor/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="vendor/css/main.css" rel="stylesheet" type="text/css">
+	<link href="vendor/css/my-custom-styles.css" rel="stylesheet" type="text/css">
+	<link href="vendor/css/skins/transparent.css" rel="stylesheet" type="text/css">
+</head>
+<body class="sidebar-fixed topnav-fixed dashboard">
+    <div id="wrapper" class="wrapper">
+        <!-- TOP BAR -->
+		<div class="top-bar navbar-fixed-top">
+			<div class="container">
+				<div class="clearfix">
+					<a href="#" class="pull-left toggle-sidebar-collapse"><i class="fa fa-bars"></i></a>
+					<!-- logo -->
+					<div class="pull-left left logo">
+						<h1 class="sr-only">JS错误监测系统</h1>
+					</div>
+					<!-- end logo -->
+					<div class="pull-right right">
+						<!-- top-bar-right -->
+						<div class="top-bar-right">
+							<!-- logged user and the menu -->
+							<div class="logged-user">
+								<%if(logged_in === 'yes'){%>
+									<div class="btn-group">
+										<a href="#" class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+											<img src="<%=avatar%>" style="height:24px;width:24px;"/>
+											<span class="name"><%=userName%></span> <span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu" role="menu">
+											<li>
+												<a href="/logout">
+													<i class="fa fa-power-off"></i>
+													<span class="text">Logout</span>
+												</a>
+											</li>
+										</ul>
+									</div>
+								<%}else{%>
+									<div class="btn-group">
+										<a href="/login" class="btn btn-link dropdown-toggle">
+											<span class="name">signIn</span>
+										</a>
+										<a href="/reg" class="btn btn-link dropdown-toggle">
+											<span class="name">signup</span>
+										</a>
+									</div>
+								<%}%>
+							</div>
+							<!-- end logged user and the menu -->
+						</div>
+						<!-- end top-bar-right -->
+					</div>
+				</div>
+			</div>
+			<!-- /container -->
+		</div>
+    </div>
+</body>
+</html>
+<script src="/config/index.js"></script>
+<script src="/vendor/js/jquery/jquery-2.1.0.min.js"></script>
+<script src="/vendor/js/bootstrap/bootstrap.min.js"></script>
+<script src="/pageScripts/index.js"></script>
