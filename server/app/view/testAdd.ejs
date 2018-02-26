@@ -5,33 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title><%= title %></title>
-    <script src="/config/index.js"></script>
-    <script src="/vendor/jquery.min.js"></script>
-    <script>
-    window.onerror = function(a,b,c,d,e){
-        var reg = /\w*(?=:)/;
-        var str = e.stack;
-        var type = str.match(reg);
-        var json = {
-            errorName: e.message,
-            filePath: b,
-            line: c,
-            col: d,
-            type:type
-        }
-        console.log(e);
-        var queryStr = '';
-        for(var k in json){
-            queryStr += k + '=' + json[k] + '&';
-        }
-        var url = window.IFConfig.url + '/api/addError' + '?' + queryStr;
-        var img = new Image();
-        img.onload = img.onerror = function(){
-            img = null;
-        };
-        img.src = url;
-    }
-    </script>
 </head>
 <body>
     

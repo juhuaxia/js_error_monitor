@@ -17,6 +17,13 @@ const ErrorController = {
         let result = await getAllErrorHelper();
         StatusCode[result.code].data = result.data;
         ctx.body = StatusCode[result.code];
+    },
+    /**
+     * 
+     * 根据类型获取错误数
+     */
+    async getErrorByType(ctx){
+        
     }
 }
 

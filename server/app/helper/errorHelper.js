@@ -45,3 +45,12 @@ export async function getAllErrorHelper(params){
         draft.data = res;
     })
 }
+
+export async function getErrorByTypeHelper(){
+    let res = [];
+    try{
+        res = await ErrorModel.find({})
+    }catch(err){
+
+    }
+}
